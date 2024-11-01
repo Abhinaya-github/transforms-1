@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+   width: 900px;
+   height: 500px;
+   border: 2px solid;
+   margin-top: 100px;
+   margin-left: 400px;
+  background-color: brown;
+}
+button{
+  font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+}
+img{
+    margin-top: 100px;
+    margin-left: 250px;
+    width: 400px;
+    transition: 0.4s ease;
+}
+.translate:hover ~ img{
+    transform: translate(-50px,50px);
+    transition: 3s ease;
+}
+.rotate:hover ~ img {
+    transform: rotate(360deg);
+    transition: 3s ease;
+}
+.skew:hover ~ img {
+    transform: skew(45deg);
+    transition: 3s ease;
+}
+.scale:hover ~ img {
+    transform: scale(3);
+    transition: 3s ease;
+}
+.scalerotate:hover ~ img{
+    transform: scale(0.2) rotate(360deg);
+    transition: 3s ease;
+ 
+}
+.skewrotate:hover ~ img{
+    transform: skew(60deg) rotate(360deg);
+    transition: 3s ease;
+}
